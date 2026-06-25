@@ -1,62 +1,115 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+# ====================
+# Xcode / iOS
+# ====================
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+*.xcuserdatad
+*.xcshareddata/
+DerivedData/
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+**/*.hmap
+**/*.ipa
+**/*.dSYM.zip
+**/*.dSYM
+**/Build/
+**/Products/
+**/build/
+**/Pods/
+**/Podfile.lock
+**/.swiftpm/
+**/xcuserdata/
 
-## User settings
-xcuserdata/
+# ====================
+# Python / Backend
+# ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.pid
+*.seed
+*.pid.lock
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+*.pyproj
+*.pyi
+*.pyd
 
-## Obj-C/Swift specific
-*.hmap
+# ====================
+# Environment variables
+# ====================
+.env
+.env.local
+.env.*.local
+*.env
+secrets.py
+config.py
 
-## App packaging
-*.ipa
-*.dSYM.zip
-*.dSYM
+# ====================
+# IDE / Editors
+# ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
 
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
+# ====================
+# Data files (локальные данные)
+# ====================
+*.json
+!*.json.example
+!package.json
+!tsconfig.json
+*.plist
+!Info.plist
 
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
+# ====================
+# Logs
+# ====================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-.build/
+# ====================
+# Backup files
+# ====================
+*.bak
+*.backup
+*.old
+*.orig
 
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build/
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+# ====================
+# Project specific
+# ====================
+# User data (не загружаем на GitHub)
+users.json
+*_*.json
+!APIManager.swift
+!GradesManager.swift
