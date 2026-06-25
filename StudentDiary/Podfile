@@ -1,0 +1,25 @@
+# Укажите источник для ускорения загрузки
+source 'https://cdn.cocoapods.org/'
+
+# Настройки CocoaPods
+install! 'cocoapods',
+  :generate_multiple_pod_projects => true,
+  :incremental_installation => true
+
+# Платформа
+platform :ios, '15.0'
+
+target 'StudentDiary' do
+  # Использование динамических фреймворков
+  use_frameworks!
+
+  # Тестовые таргеты
+  target 'StudentDiaryTests' do
+    inherit! :search_paths
+    # Pods для тестов
+  end
+
+  target 'StudentDiaryUITests' do
+    # Pods для UI-тестов
+  end
+end
